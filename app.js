@@ -167,8 +167,7 @@ function calculateRatio() {
   const ratioField = document.getElementById('form-ratio');
 
   if (sl > 0 && tp > 0) {
-    const ratio = (tp / sl).toFixed(2);
-    ratioField.value = ratio;
+    ratioField.value = (tp / sl).toFixed(2);
   } else {
     ratioField.value = '0.00';
   }
